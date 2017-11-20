@@ -1,6 +1,6 @@
 <?php
 
-namespace Liteweb\Dotpay\DotpayApi\Utils;
+namespace Liteweb\Dotpay\Models;
 
 class DotpayCallback
 {

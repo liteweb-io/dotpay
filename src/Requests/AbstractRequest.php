@@ -1,6 +1,6 @@
 <?php
 
-namespace Liteweb\Dotpay\DotpayApi\Requests;
+namespace Liteweb\Dotpay\Requests;
 
 class AbstractRequest
 {

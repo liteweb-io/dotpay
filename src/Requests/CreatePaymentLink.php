@@ -1,9 +1,9 @@
 <?php
 
-namespace Liteweb\Dotpay\DotpayApi\Requests;
+namespace Liteweb\Dotpay\Requests;
 
 use Liteweb\Dotpay\Contracts\IRequest;
-use Liteweb\Dotpay\DotpayApi\Utils\Payment;
+use Liteweb\Dotpay\Models\Payment;
 
 class CreatePaymentLink extends AbstractRequest implements IRequest
 {
@@ -15,7 +15,7 @@ class CreatePaymentLink extends AbstractRequest implements IRequest
     protected $onlinetransfer = 1;
     protected $ch_lock;
     protected $redirection_type = 0;
-    protected $buttontext = 'Return';
+    protected $buttontext;
     protected $url;
     protected $urlc;
     protected $expiration_datetime;

@@ -2,8 +2,10 @@
 
 namespace Liteweb\Dotpay\Tests;
 
-use Liteweb\Dotpay\DotpayApi\Utils\DotpayCallback;
-use Liteweb\Dotpay\DotpayApi\Validator;
+
+
+use Liteweb\Dotpay\Models\DotpayCallback;
+use Liteweb\Dotpay\Utils\Validator;
 
 class DotpaySignatureTest extends \PHPUnit\Framework\TestCase
 {

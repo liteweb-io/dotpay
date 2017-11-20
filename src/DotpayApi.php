@@ -1,12 +1,13 @@
 <?php
 
-namespace Liteweb\Dotpay\DotpayApi;
+namespace Liteweb\Dotpay;
 
-use Dotenv\Exception\InvalidCallbackException;
-use Liteweb\Dotpay\DotpayApi\Http\Client;
-use Liteweb\Dotpay\DotpayApi\Requests\CreatePaymentLink;
-use Liteweb\Dotpay\DotpayApi\Utils\CreatePaymentResponse;
-use Liteweb\Dotpay\DotpayApi\Utils\DotpayCallback;
+use ErrorException;
+use Liteweb\Dotpay\Http\Client;
+use Liteweb\Dotpay\Models\CreatePaymentResponse;
+use Liteweb\Dotpay\Models\DotpayCallback;
+use Liteweb\Dotpay\Requests\CreatePaymentLink;
+use Liteweb\Dotpay\Utils\Validator;
 
 class DotpayApi
 {
@@ -32,6 +33,6 @@ class DotpayApi
             return new DotpayCallback($data);
         }
 
-        throw new InvalidCallbackException('invalid_hash');
+        throw new ErrorException('invalid_hash');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liteweb\Dotpay\DotpayApi\Http;
+namespace Liteweb\Dotpay\Http;
 
 use Liteweb\Dotpay\Contracts\IRequest;
 

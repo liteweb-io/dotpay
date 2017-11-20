@@ -1,6 +1,6 @@
 <?php
 
-namespace Liteweb\Dotpay\DotpayApi\Utils;
+namespace Liteweb\Dotpay\Models;
 
 class CreatePaymentResponse
 {
@@ -15,6 +15,16 @@ class CreatePaymentResponse
     public function getPaymentUrl()
     {
         return $this->data->payment_url;
+    }
+
+    public function getPayer()
+    {
+        return $this->data->payer;
+    }
+
+    public function getRecipient()
+    {
+        return $this->data->recipient;
     }
 
 }

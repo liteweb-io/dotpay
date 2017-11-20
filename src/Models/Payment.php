@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kamilfronczak
- * Date: 17.11.2017
- * Time: 17:32
- */
 
-namespace Liteweb\Dotpay\DotpayApi\Utils;
+namespace Liteweb\Dotpay\Models;
 
 class Payment
 {
@@ -15,7 +9,7 @@ class Payment
     private $description;
     private $control;
     private $language;
-    private $ch_lock;
+    private $ch_lock = 0;
     private $url;
     private $urlc;
     private $expiration_datetime;
@@ -25,6 +19,7 @@ class Payment
     private $email;
     private $phone;
     private $recipient;
+    private $buttontext = 'Return';
 
     public function __construct($data)
     {

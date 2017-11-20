@@ -1,8 +1,8 @@
 <?php
 
-namespace Liteweb\Dotpay\DotpayApi;
+namespace Liteweb\Dotpay\Utils;
 
-use Liteweb\Dotpay\DotpayApi\Utils\DotpayCallback;
+use Liteweb\Dotpay\Models\DotpayCallback;
 
 class Validator
 {

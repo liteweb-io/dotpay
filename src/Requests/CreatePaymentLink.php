@@ -29,6 +29,14 @@ class CreatePaymentLink extends AbstractRequest implements IRequest
         foreach ($payment->toArray() as $key => $value) {
             $this->$key = $value;
         }
+
+        if (empty($this->url)) {
+            $this->url = $config['url'];
+        }
+
+        if (empty($this->urlc)) {
+            $this->urlc = $config['curl'];
+        }
     }
 
     public function method()
@@ -38,7 +46,7 @@ class CreatePaymentLink extends AbstractRequest implements IRequest
 
     public function path()
     {
-        return 'api/v1/accounts/'.$this->shop_id.'/payment_links/';
+        return 'api/v1/accounts/' . $this->shop_id . '/payment_links/';
     }
 
 }

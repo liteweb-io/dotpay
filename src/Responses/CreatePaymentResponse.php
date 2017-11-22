@@ -1,6 +1,6 @@
 <?php
 
-namespace Liteweb\Dotpay\Models;
+namespace Liteweb\Dotpay\Responses;
 
 class CreatePaymentResponse
 {
@@ -25,6 +25,11 @@ class CreatePaymentResponse
     public function getRecipient()
     {
         return $this->data->recipient;
+    }
+
+    public function getToken()
+    {
+        return $this->data->token;
     }
 
 }

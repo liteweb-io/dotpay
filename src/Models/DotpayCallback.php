@@ -41,6 +41,16 @@ class DotpayCallback
         return $this->data['operation_status'];
     }
 
+    public function isCompleted()
+    {
+        return $this->getOperationStatus() == 'completed';
+    }
+
+    public function isRejected()
+    {
+        return $this->getOperationStatus() == 'rejected';
+    }
+
     public function toArray()
     {
         return $this->data;

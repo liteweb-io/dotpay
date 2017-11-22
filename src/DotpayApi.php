@@ -4,9 +4,9 @@ namespace Liteweb\Dotpay;
 
 use ErrorException;
 use Liteweb\Dotpay\Http\Client;
-use Liteweb\Dotpay\Models\CreatePaymentResponse;
 use Liteweb\Dotpay\Models\DotpayCallback;
 use Liteweb\Dotpay\Requests\CreatePaymentLink;
+use Liteweb\Dotpay\Responses\CreatePaymentResponse;
 use Liteweb\Dotpay\Utils\Validator;
 
 class DotpayApi

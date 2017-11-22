@@ -37,6 +37,14 @@ class CreatePaymentLink extends AbstractRequest implements IRequest
         if (empty($this->urlc)) {
             $this->urlc = $config['curl'];
         }
+
+        if (empty($this->expiration_datetime)) {
+            $this->expiration_datetime = $config['expiration_datetime'];
+        }
+
+        if (empty($this->recipient)) {
+            $this->recipient = $config['recipient'];
+        }
     }
 
     public function method()
